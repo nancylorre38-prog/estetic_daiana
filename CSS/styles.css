@@ -1,0 +1,289 @@
+ body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f6f1ee;
+      color: #4a3b35;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .bg-rosa {
+      background-color: #d9b6b0;
+    }
+
+    .btn-rosa {
+      background-color: #c08a8a;
+      color: white;
+      border: none;
+    }
+
+    .btn-rosa:hover {
+      background-color: #a96f6f;
+    }
+
+    :root {
+    --nude-bg: #e5d3c5;
+    --chocolate-dark: #5c3d2e;
+    --chocolate-light: #8d6e63;
+    --accent-color: #3d2b1f;
+    --white-soft: #fcf8f5;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white-soft);
+    color: var(--chocolate-dark);
+}
+
+h1, h2, h3, .italic-subtitle {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Header Estilo */
+.hero-section {
+    background-color: var(--nude-bg);
+    height: 60vh;
+    color: var(--chocolate-dark);
+    border-bottom: 8px solid var(--chocolate-dark);
+}
+
+.tracking-widest {
+    letter-spacing: 5px;
+    font-size: 0.9rem;
+}
+
+.divider {
+    width: 80px;
+    height: 3px;
+    background-color: var(--chocolate-dark);
+    margin-top: 20px;
+}
+
+/* Lista de Servicios */
+.service-list li {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    padding-left: 10px;
+}
+
+.service-list span {
+    color: var(--chocolate-light);
+    margin-right: 10px;
+}
+
+/* Badge de Duración */
+.info-badge {
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid var(--chocolate-dark);
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+.duration-number {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-right: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.duration-text {
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Imágenes */
+.img-large {
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    border: 10px solid white;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* Banner de Regalo */
+.promo-banner {
+    background-color: var(--chocolate-dark);
+    color: var(--nude-bg);
+}
+
+/* Botón Personalizado */
+.btn-beauty {
+    background-color: var(--chocolate-dark);
+    color: white;
+    border-radius: 0;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.btn-beauty:hover {
+    background-color: var(--chocolate-light);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.bg-light-nude {
+    background-color: #f2e6de;
+}
+
+.footer {
+    background-color: var(--nude-bg);
+    font-size: 0.8rem;
+}
+
+:root {
+    --nude-bg: #e5d3c5;
+    --chocolate-dark: #5c3d2e;
+    --chocolate-light: #8d6e63;
+    --accent-color: #3d2b1f;
+    --white-soft: #fcf8f5;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white-soft);
+    color: var(--chocolate-dark);
+}
+
+h1, h2, h3, .italic-subtitle {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Header Estilo */
+.hero-section {
+    background-color: var(--nude-bg);
+    height: 60vh;
+    color: var(--chocolate-dark);
+    border-bottom: 8px solid var(--chocolate-dark);
+}
+
+.tracking-widest {
+    letter-spacing: 5px;
+    font-size: 0.9rem;
+}
+
+.divider {
+    width: 80px;
+    height: 3px;
+    background-color: var(--chocolate-dark);
+    margin-top: 20px;
+}
+
+/* Lista de Servicios */
+.service-list li {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    padding-left: 10px;
+}
+
+.service-list span {
+    color: var(--chocolate-light);
+    margin-right: 10px;
+}
+
+/* Badge de Duración */
+.info-badge {
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid var(--chocolate-dark);
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+.duration-number {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-right: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.duration-text {
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Imágenes */
+.img-large {
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    border: 10px solid white;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* Banner de Regalo */
+.promo-banner {
+    background-color: var(--chocolate-dark);
+    color: var(--nude-bg);
+}
+
+/* Botón Personalizado */
+.btn-beauty {
+    background-color: var(--chocolate-dark);
+    color: white;
+    border-radius: 0;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.btn-beauty:hover {
+    background-color: var(--chocolate-light);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.bg-light-nude {
+    background-color: #f2e6de;
+}
+
+.footer {
+    background-color: var(--nude-bg);
+    font-size: 0.8rem;
+}
+
+/* Estilos para la Navbar en esta página específica */
+.bg-chocolate {
+    background-color: var(--chocolate-dark) !important;
+    border-bottom: 2px solid var(--nude-bg);
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* Efecto hover para el botón de inicio */
+.nav-link:hover {
+    color: var(--nude-bg) !important;
+}
+
+/* NAVBAR LINKS */
+.navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+}
+
+/* Hover efecto */
+.navbar .nav-link:hover {
+  color: #ffe6ec !important;
+  text-decoration: underline;
+}
+
+/* Link activo */
+.navbar .nav-link.active {
+  color: #ffd1dc !important;
+  font-weight: 600;
+}

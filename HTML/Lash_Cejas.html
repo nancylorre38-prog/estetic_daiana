@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Lash & Cejas - Daiana Beauty Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&family=Alex+Brush&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --pink-main: #e91e63; /* Fucsia vibrante del flyer */
+            --pink-light: #fce4ec;
+            --purple-dark: #880e4f;
+            --white-pure: #ffffff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--white-pure);
+            color: #333;
+        }
+
+        h1, h2, .temario-title {
+            font-family: 'Playfair Display', serif;
+            color: var(--pink-main);
+        }
+
+        .script-font {
+            font-family: 'Alex Brush', cursive;
+            font-size: 2.5rem;
+            color: var(--pink-main);
+        }
+
+        /* --- NAVBAR --- */
+        .bg-pink-navbar {
+            background-color: var(--pink-main) !important;
+        }
+
+        /* --- HERO LASH --- */
+        .hero-lash {
+            background: linear-gradient(135deg, var(--pink-light) 0%, #fff 100%);
+            padding: 80px 0;
+            border-bottom: 5px double var(--pink-main);
+            position: relative;
+        }
+
+        /* --- TEMARIO CARDS --- */
+        .temario-item {
+            border: 2px solid var(--pink-main);
+            border-radius: 50px;
+            padding: 15px 25px;
+            margin-bottom: 15px;
+            transition: 0.3s;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .temario-item:hover {
+            background-color: var(--pink-main);
+            color: white;
+            transform: scale(1.02);
+        }
+
+        .temario-item span {
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .temario-item small {
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        /* --- IMÁGENES CIRCULARES --- */
+        .lash-img-circle {
+            width: 100%;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            border: 5px solid var(--pink-main);
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* --- BANNER PRÁCTICA --- */
+        .banner-practica {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .highlight-text {
+            color: #2ecc71; /* Verde del check del flyer */
+            font-weight: bold;
+        }
+
+        /* --- BOTÓN INSCRIPCIÓN --- */
+        .btn-lash {
+            background-color: var(--pink-main);
+            color: white;
+            border-radius: 30px;
+            padding: 15px 40px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none;
+            box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+        }
+
+        .btn-lash:hover {
+            background-color: var(--purple-dark);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar bg-pink-navbar navbar-dark sticky-top shadow">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Daiana Beauty Academy</a>
+        <div class="ms-auto">
+          <a class="btn btn-outline-light btn-sm fw-bold" href="../index.html">INICIO</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero-lash text-center">
+        <div class="container">
+            <h4 class="text-uppercase fw-bold mb-0" style="letter-spacing: 4px;">Curso Lash</h4>
+            <h1 class="display-2 fw-bold mb-0">Temario del Curso</h1>
+            <div class="divider mx-auto my-3" style="width: 100px; height: 3px; background: var(--pink-main);"></div>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center">
+                    <img src="../IMG/Lifting coreano.webp" alt="Lifting" class="lash-img-circle shadow">
+                    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=80&w=500" alt="Cejas" class="lash-img-circle shadow d-none d-lg-block">
+                </div>
+
+                <div class="col-lg-8 px-lg-5">
+                    <div class="temario-item shadow-sm">
+                        <span>Lifting Coreano</span>
+                        <small>Lash lifting coreano</small>
+                    </div>
+                    <div class="temario-item shadow-sm">
+                        <span>Tintura de Pestañas</span>
+                        <small>con tintes naturales</small>
+                    </div>
+                    <div class="temario-item shadow-sm">
+                        <span>Diseño de Cejas</span>
+                        <small>a medida</small>
+                    </div>
+                    <div class="temario-item shadow-sm">
+                        <span>Tintura de Cejas</span>
+                        <small>con tinte naturales</small>
+                    </div>
+                    <div class="temario-item shadow-sm">
+                        <span>Laminado de Cejas</span>
+                        <small>semipermanente</small>
+                    </div>
+
+                    <div class="mt-4 text-center text-lg-start">
+                        <p class="fw-bold" style="color: var(--pink-main);">
+                            ❤️ Incluye temario guía y materiales para la práctica
+                        </p>
+                        <span class="badge bg-danger rounded-pill px-3 py-2 text-uppercase">Cupo Limitado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner-practica text-center">
+        <div class="container">
+            <h2 class="h4 mb-0">
+                Enseño modelos Reales... Más Práctica que Teoría... y Nuevas Técnicas <span class="highlight-text">✔</span>
+            </h2>
+        </div>
+    </section>
+
+    <section class="py-5 text-center bg-light">
+        <div class="container">
+            <h3 class="mb-4">¿Lista para dominar la mirada?</h3>
+            <a href="https://wa.me/5493704711445?text=%C2%A1Hola!%20Qu%C3%A9%20linda%20est%C3%A1%20la%20p%C3%A1gina%20web%20Vi%20el%20curso%20de%20Lash%20y%20Cejas%20.%20%C2%BFTienen%20alg%C3%BAn%20cupo%20disponible?%20%F0%9F%98%8D" class="btn btn-lash btn-lg">Inscribirme ahora</a>
+        </div>
+    </section>
+
+    <footer class="py-3 text-center">
+        <p class="small text-muted mb-0">Daiana Beauty Academy | Belleza en cada mirada</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

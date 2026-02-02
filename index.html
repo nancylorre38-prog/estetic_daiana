@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Daiana Beauty Academy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f6f1ee;
+      color: #4a3b35;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* COLOR PRINCIPAL */
+    .bg-rosa {
+      background-color: #c57b87;
+    }
+
+    /* BOTONES */
+    .btn-rosa {
+      background-color: #c08a8a;
+      color: white;
+      border: none;
+    }
+
+    .btn-rosa:hover {
+      background-color: #a96f6f;
+    }
+
+    /* ===== CAMBIO: NAVBAR MÁS VIBRANTE ===== */
+    .navbar .nav-link {
+      color: #ffffff !important;
+      font-weight: 500;
+      margin-left: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .navbar .nav-link:hover {
+      color: #ffe6ec !important;
+      text-decoration: underline;
+    }
+
+    /* Dropdown cursos */
+    .dropdown-menu {
+      background-color: #f6f1ee;
+      border: none;
+    }
+
+    .dropdown-item {
+      color: #4a3b35;
+      font-weight: 500;
+    }
+
+    .dropdown-item:hover {
+      background-color: #f1dada;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg bg-rosa navbar-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Daiana Beauty Academy</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#inicio">Inicio</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#academia">Academia</a>
+        </li>
+
+        <!-- ===== CAMBIO: BOTÓN CURSOS CON PERSIANA ===== -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Cursos
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./HTML/belleza_integral.html">Belleza Integral</a></li>
+            <li><a class="dropdown-item" href="./HTML/automaquillaje.html">Automaquillaje</a></li>
+            <li><a class="dropdown-item" href="./HTML/Lash_Cejas.html">Lash & Cejas</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section id="inicio" class="py-5 text-center">
+  <div class="container">
+    <h1 class="display-5 mb-3">Tu talento puede ser tu trabajo</h1>
+    <p class="lead mb-4">
+      Academia de Belleza & Estética · Menos teoría, más práctica
+    </p>
+    <a href="https://wa.me/543704711443?text=%C2%A1Hola%20Daiana!%20Estuve%20mirando%20tu%20sitio%20web%20y%20me%20encantaron%20todos%20los%20cursos.%20Me%20gustar%C3%ADa%20hacerte%20una%20consulta%20general%2C%20%C2%BFme%20podr%C3%ADas%20asesorar%3F%20%E2%9C%A8%F0%9F%92%96" class="btn btn-rosa btn-lg">
+      Consultar por WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- ================= ACADEMIA ================= -->
+<section id="academia" class="py-5 bg-white">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-md-6">
+        <h2>Sobre la Academia</h2>
+        <p>
+          Formamos personas que quieren aprender estética desde cero
+          y convertir su talento en una salida laboral real.
+        </p>
+        <ul>
+          <li>Capacitación práctica</li>
+          <li>Modelos reales</li>
+          <li>Ideal para emprender</li>
+          <li>Para principiantes</li>
+        </ul>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <img src="./IMG/Logo Academia.png" class="img-fluid rounded" alt="Academia">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CURSOS ================= -->
+<section id="cursos" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Nuestros Cursos</h2>
+
+    <div class="row g-4">
+
+      <!-- CURSO 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Belleza Integral</h5>
+            <p class="card-text">
+              Formación completa en estética, peluquería y maquillaje.
+              Duración: 3 meses.
+            </p>
+
+            <!-- ===== CAMBIO: BOTÓN LEER MÁS ===== -->
+            <a href="./HTML/belleza_integral.html" class="btn btn-rosa">
+              Leer más
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CURSO 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Automaquillaje</h5>
+            <p class="card-text">
+              Técnicas de maquillaje de día y noche, piel y pestañas.
+            </p>
+
+            <a href="./HTML/automaquillaje.html" class="btn btn-rosa">
+              Leer más
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CURSO 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Lash & Cejas</h5>
+            <p class="card-text">
+              Lifting coreano, diseño, tinturas y laminado.
+            </p>
+
+            <a href="./HTML/Lash_Cejas.html" class="btn btn-rosa">
+              Leer más
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section id="contacto" class="py-5 bg-rosa text-white text-center">
+  <div class="container">
+    <h2>Contacto</h2>
+    <p>📍 Av. 12 de Octubre esq. Av. Néstor Kirchner 5465 – B° La Colonia</p>
+    <p>📲 WhatsApp: <strong>3704711445</strong></p>
+
+    <a href="https://wa.me/5493704711445" class="btn btn-light">
+      Enviar mensaje
+    </a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="text-center py-3 bg-dark text-white">
+  <small>© 2026 Daiana Beauty Academy · Derechos reservados</small>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

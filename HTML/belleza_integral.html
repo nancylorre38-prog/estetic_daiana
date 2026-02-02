@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Belleza - Daiana Beauty Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --nude-bg: #e5d3c5;
+            --chocolate-dark: #5c3d2e;
+            --chocolate-light: #8d6e63;
+            --accent-color: #3d2b1f;
+            --white-soft: #fcf8f5;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--white-soft);
+            color: var(--chocolate-dark);
+        }
+
+        h1, h2, h3, .italic-subtitle {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* --- NAVBAR PERSONALIZADA --- */
+        .bg-chocolate-navbar {
+            background-color: var(--chocolate-dark) !important;
+        }
+
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 1px;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero-section {
+            background-color: var(--nude-bg);
+            padding: 80px 0;
+            color: var(--chocolate-dark);
+            border-bottom: 8px solid var(--chocolate-dark);
+        }
+
+        .tracking-widest {
+            letter-spacing: 5px;
+            font-size: 0.9rem;
+        }
+
+        .divider {
+            width: 80px;
+            height: 3px;
+            background-color: var(--chocolate-dark);
+            margin: 20px auto;
+        }
+
+        /* --- LISTA DE ENSEÑANZA --- */
+        .service-list li {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            list-style: none;
+        }
+
+        .service-list li::before {
+            content: "✦";
+            color: var(--chocolate-light);
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        /* --- BADGE DE DURACIÓN --- */
+        .info-badge {
+            display: inline-flex;
+            align-items: center;
+            border: 2px solid var(--chocolate-dark);
+            padding: 15px 30px;
+            border-radius: 15px;
+            background-color: white;
+        }
+
+        .duration-number {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-right: 15px;
+            line-height: 1;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .duration-text {
+            line-height: 1.2;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* --- IMAGEN DECORATIVA --- */
+        .img-container {
+            border: 10px solid white;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* --- BANNER PROMOCIONAL --- */
+        .promo-banner {
+            background-color: var(--chocolate-dark);
+            color: var(--nude-bg);
+            font-weight: 400;
+        }
+
+        /* --- BOTÓN --- */
+        .btn-beauty {
+            background-color: var(--chocolate-dark);
+            color: white;
+            border-radius: 0;
+            transition: all 0.3s;
+            font-weight: bold;
+            border: none;
+        }
+
+        .btn-beauty:hover {
+            background-color: var(--chocolate-light);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .bg-light-nude {
+            background-color: #f2e6de;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-chocolate-navbar navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Daiana Beauty Academy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link fw-semibold" href="../index.html">INICIO</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <h4 class="text-uppercase tracking-widest mb-2">Daiana Beauty Academy</h4>
+            <h1 class="display-3 fw-bold">Curso de Belleza</h1>
+            <p class="h4 italic-subtitle text-muted">(Nivel básico)</p>
+            <div class="divider"></div>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&q=80&w=800" alt="Belleza" class="img-fluid">
+                    </div>
+                </div>
+                
+                <div class="col-lg-7 ps-lg-5">
+                    <h2 class="mb-4" style="color: var(--chocolate-dark);">Enseñamos:</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="service-list p-0">
+                                <li>Manicura</li>
+                                <li>Pedicura</li>
+                                <li>Lavado</li>
+                                <li>Alisado</li>
+                                <li>Tintes</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="service-list p-0">
+                                <li>Tratamientos</li>
+                                <li>Decoloración</li>
+                                <li>Facial</li>
+                                <li>Maquillaje</li>
+                                <li>Peinados</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="info-badge mt-4">
+                        <span class="duration-number">3</span>
+                        <span class="duration-text">meses de<br>duración</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo-banner py-4 text-center">
+        <div class="container">
+            <h4 class="mb-0">✨ Un kit de brochas <strong>gratis</strong> al inscribirte. ✨</h4>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light-nude text-center">
+        <div class="container">
+            <h2 class="mb-3">Inscríbete</h2>
+            <p class="lead mb-4">Comienza tu camino profesional en el mundo de la estética hoy mismo.</p>
+            <a href="https://wa.me/5493704711445?text=Hola!%20Estuve%20visitando%20el%20sitio%20web%20Daiana%20Beauty%20Academy%20y%20me%20encant%C3%B3%20lo%20que%20vi.%20Me%20interes%C3%B3%20el%20curso%20de%20Belleza%20Integral,%20%C2%BFcu%C3%A1ndo%20puedo%20empezar?%20%E2%9C%A8" class="btn btn-beauty px-5 py-3 shadow">SOLICITAR INFORMACIÓN</a>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center border-top">
+        <p class="small text-muted mb-0">Daiana Beauty Academy © 2026 | Profesionalismo y Estética</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
