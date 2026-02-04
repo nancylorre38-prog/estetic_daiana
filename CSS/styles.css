@@ -500,3 +500,15 @@ footer {
     color: white;
     box-shadow: 0 15px 25px rgba(37, 211, 102, 0.4);
 }
+
+.zoom-effect {
+    transition: transform 0.5s ease;
+}
+
+.zoom-effect:hover {
+    transform: scale(1.08); /* Hace un zoom suave al pasar el mouse */
+}
+
+.img-container {
+    border: 8px solid #fff; /* Le da un marco blanco tipo cuadro */
+}
